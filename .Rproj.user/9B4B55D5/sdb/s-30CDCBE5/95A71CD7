@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#' Body Mass Index\n#'\n#' Caculate BMI\n#' @param height Input height (in cm)\n#' @param weight Input weight (in kg)\n#' @param PRINT if print is TRUE, then print level (Default is FALSE)\n#' @return BMI\n#' @export\nBMI <- function(height, weight, PRINT=FALSE){\n  height <- height / 100\n  bmi <- weight / height^2\n\n  if(PRINT){\n    if(bmi < 18.5){\n      print(\"underweight\")\n    } else if(bmi < 24){\n      print(\"normal range\")\n    } else if(bmi < 28){\n      print(\"overweight\")\n    } else {\n      print(\"obese\")\n    }\n  }\n\n  return(bmi)\n}\n",
+    "created" : 1506242482112.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2822996924",
+    "id" : "95A71CD7",
+    "lastKnownWriteTime" : 1506244601,
+    "last_content_update" : 1506244601204,
+    "path" : "D:/cygwin/home/Fu Yang/R/CustomPackages/SunnyFirstPackage/R/BMI.R",
+    "project_path" : "R/BMI.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
